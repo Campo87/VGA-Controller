@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Aug 14 12:34:13 2020
+# Process ID: 13140
+# Current directory: C:/Xilinx/Vivado/projects/vga_controller/vga_controller.runs/clk_div_synth_1
+# Command line: vivado.exe -log clk_div.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_div.tcl
+# Log file: C:/Xilinx/Vivado/projects/vga_controller/vga_controller.runs/clk_div_synth_1/clk_div.vds
+# Journal file: C:/Xilinx/Vivado/projects/vga_controller/vga_controller.runs/clk_div_synth_1\vivado.jou
+#-----------------------------------------------------------
+source clk_div.tcl -notrace
