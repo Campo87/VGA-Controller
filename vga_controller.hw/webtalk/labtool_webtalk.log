@@ -1,9 +1,0 @@
-
-****** Webtalk v2020.1 (64-bit)
-  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
-  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
-
-source C:/Xilinx/Vivado/projects/vga_controller/vga_controller.hw/webtalk/labtool_webtalk.tcl -notrace
-INFO: [Common 17-186] 'C:/Xilinx/Vivado/projects/vga_controller/vga_controller.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Fri Aug 14 16:21:33 2020. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2020.1/doc/webtalk_introduction.html.
-INFO: [Common 17-206] Exiting Webtalk at Fri Aug 14 16:21:33 2020...
