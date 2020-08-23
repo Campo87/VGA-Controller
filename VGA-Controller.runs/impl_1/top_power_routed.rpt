@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date             : Wed Aug 19 20:28:08 2020
+| Date             : Sat Aug 22 23:04:27 2020
 | Host             : Campo-PC running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.189        |
+| Total On-Chip Power (W)  | 0.191        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.117        |
+| Dynamic (W)              | 0.119        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 84.1         |
-| Junction Temperature (C) | 25.9         |
+| Max Ambient (C)          | 84.0         |
+| Junction Temperature (C) | 26.0         |
 | Confidence Level         | Medium       |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -53,15 +53,15 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        8 |       --- |             --- |
-| Slice Logic    |    <0.001 |       59 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       27 |     20800 |            0.13 |
-|   Register     |    <0.001 |       20 |     41600 |            0.05 |
+| Slice Logic    |    <0.001 |       71 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       36 |     20800 |            0.17 |
+|   Register     |    <0.001 |       22 |     41600 |            0.05 |
 |   Others       |     0.000 |        4 |       --- |             --- |
-| Signals        |    <0.001 |       38 |       --- |             --- |
-| MMCM           |     0.116 |        1 |         5 |           20.00 |
-| I/O            |    <0.001 |       15 |       106 |           14.15 |
+| Signals        |    <0.001 |       46 |       --- |             --- |
+| PLL            |     0.113 |        1 |         5 |           20.00 |
+| I/O            |     0.005 |       15 |       106 |           14.15 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.189 |          |           |                 |
+| Total          |     0.191 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,9 +71,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.011 |       0.001 |      0.010 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.077 |       0.064 |      0.013 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.022 |       0.013 |      0.010 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.069 |       0.057 |      0.013 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -128,10 +128,10 @@ Table of Contents
 | Clock                | Domain                          | Constraint (ns) |
 +----------------------+---------------------------------+-----------------+
 | clk                  | clk                             |            10.0 |
-| clk_out1_clk_25MHz   | vga_Clk/inst/clk_out1_clk_25MHz |            40.0 |
-| clk_out1_clk_25MHz_1 | vga_Clk/inst/clk_out1_clk_25MHz |            40.0 |
-| clkfbout_clk_25MHz   | vga_Clk/inst/clkfbout_clk_25MHz |            10.0 |
-| clkfbout_clk_25MHz_1 | vga_Clk/inst/clkfbout_clk_25MHz |            10.0 |
+| clk_out_clk_wiz_0    | vga_Clk/inst/clk_out_clk_wiz_0  |             9.3 |
+| clk_out_clk_wiz_0_1  | vga_Clk/inst/clk_out_clk_wiz_0  |             9.3 |
+| clkfbout_clk_wiz_0   | vga_Clk/inst/clkfbout_clk_wiz_0 |            50.0 |
+| clkfbout_clk_wiz_0_1 | vga_Clk/inst/clkfbout_clk_wiz_0 |            50.0 |
 | sys_clk_pin          | clk                             |            10.0 |
 +----------------------+---------------------------------+-----------------+
 
@@ -145,9 +145,9 @@ Table of Contents
 +-----------+-----------+
 | Name      | Power (W) |
 +-----------+-----------+
-| top       |     0.117 |
-|   vga_Clk |     0.116 |
-|     inst  |     0.116 |
+| top       |     0.119 |
+|   vga_Clk |     0.113 |
+|     inst  |     0.113 |
 +-----------+-----------+
 
 

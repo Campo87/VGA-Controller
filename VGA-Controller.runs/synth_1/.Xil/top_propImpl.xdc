@@ -1,10 +1,10 @@
-set_property SRC_FILE_INFO {cfile:c:/Users/Campo/Documents/VGA-Controller/VGA-Controller.srcs/sources_1/ip/clk_25MHz/clk_25MHz/clk_25MHz_in_context.xdc rfile:../../../VGA-Controller.srcs/sources_1/ip/clk_25MHz/clk_25MHz/clk_25MHz_in_context.xdc id:1 order:EARLY scoped_inst:vga_Clk} [current_design]
+set_property SRC_FILE_INFO {cfile:c:/Users/Campo/Documents/VGA-Controller/VGA-Controller.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc rfile:../../../VGA-Controller.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc id:1 order:EARLY scoped_inst:vga_Clk} [current_design]
 set_property SRC_FILE_INFO {cfile:C:/Users/Campo/Documents/VGA-Controller/VGA-Controller.srcs/constrs_1/new/constr.xdc rfile:../../../VGA-Controller.srcs/constrs_1/new/constr.xdc id:2} [current_design]
 current_instance vga_Clk
 set_property src_info {type:SCOPED_XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
 create_clock -period 10.000 [get_ports -no_traverse {}]
 set_property src_info {type:SCOPED_XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]
-create_generated_clock -source [get_ports clk_in] -edges {1 2 3} -edge_shift {0.000 15.000 30.000} [get_ports {}]
+create_generated_clock -source [get_ports clk_in] -edges {1 2 3} -edge_shift {0.000 -0.370 -0.741} [get_ports {}]
 current_instance
 set_property src_info {type:XDC file:2 line:2 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN W5 [get_ports clk]

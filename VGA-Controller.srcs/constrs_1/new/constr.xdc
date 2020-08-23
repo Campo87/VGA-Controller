@@ -37,4 +37,3 @@ set_property IOSTANDARD LVCMOS33 [get_ports Hsync]
 ##VSYNC
 set_property PACKAGE_PIN R19 [get_ports Vsync]
 set_property IOSTANDARD LVCMOS33 [get_ports Vsync]
-	

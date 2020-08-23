@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date         : Wed Aug 19 20:27:51 2020
+| Date         : Sat Aug 22 23:04:07 2020
 | Host         : Campo-PC running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
 | Design       : top
@@ -27,7 +27,7 @@ Table of Contents
 |    Minimum number of control sets                        |     2 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    12 |
+| Unused register locations in slices containing registers |    10 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -58,10 +58,10 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              10 |            3 |
+| No           | No                    | No                     |              11 |            6 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |               0 |            0 |
-| Yes          | No                    | No                     |              10 |            4 |
+| Yes          | No                    | No                     |              11 |            5 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
@@ -70,11 +70,11 @@ Table of Contents
 4. Detailed Control Set Information
 -----------------------------------
 
-+------------------------+---------------------+------------------+------------------+----------------+--------------+
-|      Clock Signal      |    Enable Signal    | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
-+------------------------+---------------------+------------------+------------------+----------------+--------------+
-|  vga_Clk/inst/clk_out1 |                     |                  |                3 |             10 |         3.33 |
-|  vga_Clk/inst/clk_out1 | vga_Sync/vert_count |                  |                4 |             10 |         2.50 |
-+------------------------+---------------------+------------------+------------------+----------------+--------------+
++-----------------------+----------------------+------------------+------------------+----------------+--------------+
+|      Clock Signal     |     Enable Signal    | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------------+----------------------+------------------+------------------+----------------+--------------+
+|  vga_Clk/inst/clk_out |                      |                  |                6 |             11 |         1.83 |
+|  vga_Clk/inst/clk_out | vga_Sync/frame_count |                  |                5 |             11 |         2.20 |
++-----------------------+----------------------+------------------+------------------+----------------+--------------+
 
 

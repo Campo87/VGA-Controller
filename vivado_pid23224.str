@@ -1,0 +1,150 @@
+/*
+
+Xilinx Vivado v2020.1 (64-bit) [Major: 2020, Minor: 1]
+SW Build: 2902540 on Wed May 27 19:54:49 MDT 2020
+IP Build: 2902112 on Wed May 27 22:43:36 MDT 2020
+
+Process ID (PID): 23224
+License: Customer
+
+Current time: 	Sat Aug 22 03:02:14 CDT 2020
+Time zone: 	Central Standard Time (America/Chicago)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 2
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2020.1/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2020.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Campo
+User home directory: C:/Users/Campo
+User working directory: C:/Users/Campo/Documents/VGA-Controller
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2020.1
+RDI_DATADIR: C:/Xilinx/Vivado/2020.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2020.1/bin
+
+Vivado preferences file location: C:/Users/Campo/AppData/Roaming/Xilinx/Vivado/2020.1/vivado.xml
+Vivado preferences directory: C:/Users/Campo/AppData/Roaming/Xilinx/Vivado/2020.1/
+Vivado layouts directory: C:/Users/Campo/AppData/Roaming/Xilinx/Vivado/2020.1/data/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2020.1/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Campo/Documents/VGA-Controller/vivado.log
+Vivado journal file location: 	C:/Users/Campo/Documents/VGA-Controller/vivado.jou
+Engine tmp dir: 	C:/Users/Campo/Documents/VGA-Controller/.Xil/Vivado-23224-Campo-PC
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2020.1/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2020.1/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2020.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2020.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2020.1
+
+
+GUI allocated memory:	185 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,006 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bz (cs):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Campo\Documents\VGA-Controller\VGA-Controller.xpr. Version: Vivado v2020.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// Tcl Message: open_project C:/Users/Campo/Documents/VGA-Controller/VGA-Controller.xpr 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 119 MB (+122533kb) [00:00:06]
+// [Engine Memory]: 1,006 MB (+903117kb) [00:00:06]
+// WARNING: HEventQueue.dispatchEvent() is taking  2321 ms.
+// Tcl Message: open_project C:/Users/Campo/Documents/VGA-Controller/VGA-Controller.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'. 
+// Project name: VGA-Controller; location: C:/Users/Campo/Documents/VGA-Controller; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bz (cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,006 MB. GUI used memory: 96 MB. Current time: 8/22/20, 3:02:15 AM CDT
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 141 MB (+16682kb) [00:00:15]
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (J, cs)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ai (ao, cs)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cs):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/Users/Campo/Documents/VGA-Controller/VGA-Controller.sim/sim_1/behav/xsim/simulate.log" 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/Users/Campo/Documents/VGA-Controller/VGA-Controller.sim/sim_1/behav/xsim/simulate.log" 
+// HOptionPane Error: 'boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/Users/Campo/Documents/VGA-Controller/VGA-Controller.sim/ sim_1/behav/xsim/simulate.log" (Run Simulation)'
+// 'd' command handler elapsed time: 3 seconds
+selectButton("OptionPane.button", "OK"); // JButton (v, B)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 3); // B (F, cs)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 1); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 1, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 1, true, false, false, false, false, true); // B (F, cs) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 1); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), vga_Sync : sync_gen (sync_gen.v)]", 3, false, false, false, false, true, false); // B (F, cs) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), vga_Sync : sync_gen (sync_gen.v)]", 3, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), vga_Sync : sync_gen (sync_gen.v)]", 3, false, false, false, false, false, true); // B (F, cs) - Double Click
+// Elapsed time: 20 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false, false, false, false, true, false); // u (J, cs) - Popup Trigger
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (J, cs)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ai (ao, cs)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cs):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/Users/Campo/Documents/VGA-Controller/VGA-Controller.sim/sim_1/behav/xsim/simulate.log" 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/Users/Campo/Documents/VGA-Controller/VGA-Controller.sim/sim_1/behav/xsim/simulate.log" 
+// HOptionPane Error: 'boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/Users/Campo/Documents/VGA-Controller/VGA-Controller.sim/ sim_1/behav/xsim/simulate.log" (Run Simulation)'
+selectButton("OptionPane.button", "OK"); // JButton (v, B)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aB, cs)
+closeTask("Project Manager", "Project Manager", "DesignTask.PROJECT_MANAGER");
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// A (cs): Close Project: addNotify

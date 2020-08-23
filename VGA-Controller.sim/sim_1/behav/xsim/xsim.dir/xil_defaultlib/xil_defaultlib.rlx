@@ -3,7 +3,8 @@
 May 27 2020
 20:09:33
 C:/Users/Campo/Documents/VGA-Controller/VGA-Controller.sim/sim_1/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
-C:/Users/Campo/Documents/VGA-Controller/VGA-Controller.srcs/sources_1/ip/clk_25MHz/clk_25MHz.v,1597872930,verilog,,C:/Users/Campo/Documents/VGA-Controller/VGA-Controller.srcs/sources_1/new/sync_gen.v,,clk_25MHz,,,../../../../VGA-Controller.srcs/sources_1/ip/clk_25MHz,,,,,
-C:/Users/Campo/Documents/VGA-Controller/VGA-Controller.srcs/sources_1/ip/clk_25MHz/clk_25MHz_clk_wiz.v,1597872930,verilog,,C:/Users/Campo/Documents/VGA-Controller/VGA-Controller.srcs/sources_1/ip/clk_25MHz/clk_25MHz.v,,clk_25MHz_clk_wiz,,,../../../../VGA-Controller.srcs/sources_1/ip/clk_25MHz,,,,,
-C:/Users/Campo/Documents/VGA-Controller/VGA-Controller.srcs/sources_1/new/sync_gen.v,1597884844,verilog,,C:/Users/Campo/Documents/VGA-Controller/VGA-Controller.srcs/sources_1/new/top.v,,sync_gen,,,../../../../VGA-Controller.srcs/sources_1/ip/clk_25MHz,,,,,
-C:/Users/Campo/Documents/VGA-Controller/VGA-Controller.srcs/sources_1/new/top.v,1597885073,verilog,,,,top,,,../../../../VGA-Controller.srcs/sources_1/ip/clk_25MHz,,,,,
+C:/Users/Campo/Documents/VGA-Controller/VGA-Controller.srcs/sim_1/new/top_tb.v,1598088422,verilog,,,,top_tb,,,../../../../VGA-Controller.srcs/sources_1/ip/clk_wiz_0,,,,,
+C:/Users/Campo/Documents/VGA-Controller/VGA-Controller.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,1598073810,verilog,,C:/Users/Campo/Documents/VGA-Controller/VGA-Controller.srcs/sources_1/new/sync_gen.v,,clk_wiz_0,,,../../../../VGA-Controller.srcs/sources_1/ip/clk_wiz_0,,,,,
+C:/Users/Campo/Documents/VGA-Controller/VGA-Controller.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,1598073810,verilog,,C:/Users/Campo/Documents/VGA-Controller/VGA-Controller.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,,clk_wiz_0_clk_wiz,,,../../../../VGA-Controller.srcs/sources_1/ip/clk_wiz_0,,,,,
+C:/Users/Campo/Documents/VGA-Controller/VGA-Controller.srcs/sources_1/new/sync_gen.v,1598083245,verilog,,C:/Users/Campo/Documents/VGA-Controller/VGA-Controller.srcs/sources_1/new/top.v,,sync_gen,,,../../../../VGA-Controller.srcs/sources_1/ip/clk_wiz_0,,,,,
+C:/Users/Campo/Documents/VGA-Controller/VGA-Controller.srcs/sources_1/new/top.v,1598082624,verilog,,C:/Users/Campo/Documents/VGA-Controller/VGA-Controller.srcs/sim_1/new/top_tb.v,,top,,,../../../../VGA-Controller.srcs/sources_1/ip/clk_wiz_0,,,,,

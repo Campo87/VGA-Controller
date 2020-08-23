@@ -92,10 +92,10 @@ read_verilog -library xil_defaultlib {
   C:/Users/Campo/Documents/VGA-Controller/VGA-Controller.srcs/sources_1/new/sync_gen.v
   C:/Users/Campo/Documents/VGA-Controller/VGA-Controller.srcs/sources_1/new/top.v
 }
-read_ip -quiet c:/Users/Campo/Documents/VGA-Controller/VGA-Controller.srcs/sources_1/ip/clk_25MHz/clk_25MHz.xci
-set_property used_in_implementation false [get_files -all c:/Users/Campo/Documents/VGA-Controller/VGA-Controller.srcs/sources_1/ip/clk_25MHz/clk_25MHz_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Campo/Documents/VGA-Controller/VGA-Controller.srcs/sources_1/ip/clk_25MHz/clk_25MHz.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Campo/Documents/VGA-Controller/VGA-Controller.srcs/sources_1/ip/clk_25MHz/clk_25MHz_ooc.xdc]
+read_ip -quiet C:/Users/Campo/Documents/VGA-Controller/VGA-Controller.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+set_property used_in_implementation false [get_files -all c:/Users/Campo/Documents/VGA-Controller/VGA-Controller.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Campo/Documents/VGA-Controller/VGA-Controller.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Campo/Documents/VGA-Controller/VGA-Controller.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
