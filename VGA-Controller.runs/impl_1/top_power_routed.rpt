@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date             : Sat Aug 22 23:04:27 2020
+| Date             : Mon Aug 24 09:59:27 2020
 | Host             : Campo-PC running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.191        |
+| Total On-Chip Power (W)  | 0.187        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.119        |
+| Dynamic (W)              | 0.115        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 84.0         |
-| Junction Temperature (C) | 26.0         |
+| Max Ambient (C)          | 84.1         |
+| Junction Temperature (C) | 25.9         |
 | Confidence Level         | Medium       |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -53,15 +53,15 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        8 |       --- |             --- |
-| Slice Logic    |    <0.001 |       71 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       36 |     20800 |            0.17 |
-|   Register     |    <0.001 |       22 |     41600 |            0.05 |
-|   Others       |     0.000 |        4 |       --- |             --- |
-| Signals        |    <0.001 |       46 |       --- |             --- |
+| Slice Logic    |    <0.001 |       92 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       42 |     20800 |            0.20 |
+|   Register     |    <0.001 |       30 |     41600 |            0.07 |
+|   Others       |     0.000 |        6 |       --- |             --- |
+| Signals        |    <0.001 |       58 |       --- |             --- |
 | PLL            |     0.113 |        1 |         5 |           20.00 |
-| I/O            |     0.005 |       15 |       106 |           14.15 |
+| I/O            |    <0.001 |       15 |       106 |           14.15 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.191 |          |           |                 |
+| Total          |     0.187 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Vccint    |       1.000 |     0.022 |       0.013 |      0.010 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.069 |       0.057 |      0.013 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -145,7 +145,7 @@ Table of Contents
 +-----------+-----------+
 | Name      | Power (W) |
 +-----------+-----------+
-| top       |     0.119 |
+| top       |     0.115 |
 |   vga_Clk |     0.113 |
 |     inst  |     0.113 |
 +-----------+-----------+

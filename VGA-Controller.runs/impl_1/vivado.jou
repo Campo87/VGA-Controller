@@ -2,8 +2,8 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Sat Aug 22 23:04:59 2020
-# Process ID: 12012
+# Start of session at: Mon Aug 24 09:59:44 2020
+# Process ID: 20872
 # Current directory: C:/Users/Campo/Documents/VGA-Controller/VGA-Controller.runs/impl_1
 # Command line: vivado.exe -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
 # Log file: C:/Users/Campo/Documents/VGA-Controller/VGA-Controller.runs/impl_1/top.vdi
