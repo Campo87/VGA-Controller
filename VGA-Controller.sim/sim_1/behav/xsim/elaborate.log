@@ -1,6 +1,6 @@
-Vivado Simulator 2020.1
+Vivado Simulator 2020.2
 Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 221ce5daad1944a2b1861854bb20791a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 221ce5daad1944a2b1861854bb20791a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
@@ -9,12 +9,13 @@ Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module unisims_ver.IBUF
-Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=54,CLKIN...
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.12...
 Compiling module unisims_ver.BUFG
-Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
-Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.vga_pixel_clk_clk_wiz
+Compiling module xil_defaultlib.vga_pixel_clk
+Compiling module unisims_ver.DSP48E1(ADREG=0,DREG=0,MREG=0,US...
+Compiling module unimacro_ver.COUNTER_TC_MACRO(DEVICE="7SERIES...
 Compiling module xil_defaultlib.sync_gen
-Compiling module xil_defaultlib.pixel_rom
 Compiling module xil_defaultlib.top
 Compiling module xil_defaultlib.top_tb
 Compiling module xil_defaultlib.glbl

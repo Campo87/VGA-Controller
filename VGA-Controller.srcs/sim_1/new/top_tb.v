@@ -2,14 +2,25 @@
 
 module top_tb;
 
-reg        clk = 0;
+reg        clk;
+reg        rst;
 wire       Hsync;
 wire       Vsync;
 wire [3:0] vgaRed;
 wire [3:0] vgaGreen;
 wire [3:0] vgaBlue;
 
-top UUT(Hsync,Vsync,vgaRed,vgaGreen,vgaBlue,clk);
+top UUT(rst,clk,Hsync,Vsync,vgaRed,vgaGreen,vgaBlue);
+
+initial begin
+    clk = 0;
+    rst = 1;
+    
+    #15
+    rst = 0;
+end
+
+
 
 always #5 clk = ~clk;
     

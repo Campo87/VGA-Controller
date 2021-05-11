@@ -1,8 +1,7 @@
 # compile verilog/system verilog design source files
-verilog xil_defaultlib  --include "../../../../VGA-Controller.srcs/sources_1/ip/clk_wiz_0" \
-"../../../../VGA-Controller.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" \
-"../../../../VGA-Controller.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" \
-"../../../../VGA-Controller.srcs/sources_1/new/pixel_ram.v" \
+verilog xil_defaultlib  --include "../../../../VGA-Controller.srcs/sources_1/ip/vga_pixel_clk" \
+"../../../../VGA-Controller.srcs/sources_1/ip/vga_pixel_clk/vga_pixel_clk_clk_wiz.v" \
+"../../../../VGA-Controller.srcs/sources_1/ip/vga_pixel_clk/vga_pixel_clk.v" \
 "../../../../VGA-Controller.srcs/sources_1/new/sync_gen.v" \
 "../../../../VGA-Controller.srcs/sources_1/new/top.v" \
 "../../../../VGA-Controller.srcs/sim_1/new/top_tb.v" \

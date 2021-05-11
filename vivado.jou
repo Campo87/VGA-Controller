@@ -1,14 +1,14 @@
 #-----------------------------------------------------------
-# Vivado v2020.1 (64-bit)
-# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
-# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Thu Sep  3 17:01:02 2020
-# Process ID: 3552
-# Current directory: C:/Users/Campo/Documents/VGA-Controller
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent27104 C:\Users\Campo\Documents\VGA-Controller\VGA-Controller.xpr
-# Log file: C:/Users/Campo/Documents/VGA-Controller/vivado.log
-# Journal file: C:/Users/Campo/Documents/VGA-Controller\vivado.jou
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Feb  1 14:12:37 2021
+# Process ID: 28600
+# Current directory: C:/Users/James/Documents/GitHub/VGA-Controller
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21152 C:\Users\James\Documents\GitHub\VGA-Controller\VGA-Controller.xpr
+# Log file: C:/Users/James/Documents/GitHub/VGA-Controller/vivado.log
+# Journal file: C:/Users/James/Documents/GitHub/VGA-Controller\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/Campo/Documents/VGA-Controller/VGA-Controller.xpr
+open_project C:/Users/James/Documents/GitHub/VGA-Controller/VGA-Controller.xpr
 update_compile_order -fileset sources_1

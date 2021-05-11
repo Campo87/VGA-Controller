@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/Campo/Documents/VGA-Controller/VGA-Controller.runs/synth_1/top.tcl"
+  variable script "C:/Users/James/Documents/GitHub/VGA-Controller/VGA-Controller.runs/synth_1/top.tcl"
   variable category "vivado_synth"
 }
 
@@ -79,23 +79,23 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/Campo/Documents/VGA-Controller/VGA-Controller.cache/wt [current_project]
-set_property parent.project_path C:/Users/Campo/Documents/VGA-Controller/VGA-Controller.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/James/Documents/GitHub/VGA-Controller/VGA-Controller.cache/wt [current_project]
+set_property parent.project_path C:/Users/James/Documents/GitHub/VGA-Controller/VGA-Controller.xpr [current_project]
 set_property XPM_LIBRARIES XPM_CDC [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/Campo/Documents/VGA-Controller/VGA-Controller.cache/ip [current_project]
+set_property ip_output_repo c:/Users/James/Documents/GitHub/VGA-Controller/VGA-Controller.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  C:/Users/Campo/Documents/VGA-Controller/VGA-Controller.srcs/sources_1/new/sync_gen.v
-  C:/Users/Campo/Documents/VGA-Controller/VGA-Controller.srcs/sources_1/new/top.v
+  C:/Users/James/Documents/GitHub/VGA-Controller/VGA-Controller.srcs/sources_1/new/sync_gen.v
+  C:/Users/James/Documents/GitHub/VGA-Controller/VGA-Controller.srcs/sources_1/new/top.v
 }
-read_ip -quiet C:/Users/Campo/Documents/VGA-Controller/VGA-Controller.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
-set_property used_in_implementation false [get_files -all c:/Users/Campo/Documents/VGA-Controller/VGA-Controller.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Campo/Documents/VGA-Controller/VGA-Controller.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Campo/Documents/VGA-Controller/VGA-Controller.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
+read_ip -quiet c:/Users/James/Documents/GitHub/VGA-Controller/VGA-Controller.srcs/sources_1/ip/vga_pixel_clk/vga_pixel_clk.xci
+set_property used_in_implementation false [get_files -all c:/Users/James/Documents/GitHub/VGA-Controller/VGA-Controller.srcs/sources_1/ip/vga_pixel_clk/vga_pixel_clk_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/James/Documents/GitHub/VGA-Controller/VGA-Controller.srcs/sources_1/ip/vga_pixel_clk/vga_pixel_clk.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/James/Documents/GitHub/VGA-Controller/VGA-Controller.srcs/sources_1/ip/vga_pixel_clk/vga_pixel_clk_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -106,8 +106,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/Campo/Documents/VGA-Controller/VGA-Controller.srcs/constrs_1/new/constr.xdc
-set_property used_in_implementation false [get_files C:/Users/Campo/Documents/VGA-Controller/VGA-Controller.srcs/constrs_1/new/constr.xdc]
+read_xdc C:/Users/James/Documents/GitHub/VGA-Controller/VGA-Controller.srcs/constrs_1/new/constr.xdc
+set_property used_in_implementation false [get_files C:/Users/James/Documents/GitHub/VGA-Controller/VGA-Controller.srcs/constrs_1/new/constr.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
@@ -115,6 +115,9 @@ close [open __synthesis_is_running__ w]
 OPTRACE "synth_design" START { }
 synth_design -top top -part xc7a35tcpg236-1
 OPTRACE "synth_design" END { }
+if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
+ send_msg_id runtcl-6 info "Synthesis results are not added to the cache due to CRITICAL_WARNING"
+}
 
 
 OPTRACE "write_checkpoint" START { CHECKPOINT }

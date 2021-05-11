@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Users/Campo/Documents/VGA-Controller/VGA-Controller.runs/impl_1/top.tcl"
+  variable script "C:/Users/James/Documents/GitHub/VGA-Controller/VGA-Controller.runs/impl_1/top.tcl"
   variable category "vivado_impl"
 }
 
@@ -112,10 +112,11 @@ proc step_failed { step } {
   set endFile ".$step.error.rst"
   set ch [open $endFile w]
   close $ch
+OPTRACE "impl_1" END { }
 }
 
 
-OPTRACE "Implementation" START { ROLLUP_1 }
+OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Write Bitstream" START { ROLLUP_AUTO }
 OPTRACE "write_bitstream setup" START { }
 start_step write_bitstream
@@ -125,12 +126,12 @@ set rc [catch {
   set_param chipscope.maxJobs 3
   set_param xicom.use_bs_reader 1
   open_checkpoint top_routed.dcp
-  set_property webtalk.parent_dir C:/Users/Campo/Documents/VGA-Controller/VGA-Controller.cache/wt [current_project]
+  set_property webtalk.parent_dir C:/Users/James/Documents/GitHub/VGA-Controller/VGA-Controller.cache/wt [current_project]
 set_property TOP top [current_fileset]
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }
   set_property XPM_LIBRARIES XPM_CDC [current_project]
-  catch { write_mem_info -force top.mmi }
+  catch { write_mem_info -force -no_partial_mmi top.mmi }
 OPTRACE "write_bitstream setup" END { }
 OPTRACE "write_bitstream" START { }
   write_bitstream -force top.bit 
@@ -152,4 +153,4 @@ if {$rc} {
 
 OPTRACE "write_bitstream misc" END { }
 OPTRACE "Phase: Write Bitstream" END { }
-OPTRACE "Implementation" END { }
+OPTRACE "impl_1" END { }

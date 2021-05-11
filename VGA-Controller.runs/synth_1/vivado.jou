@@ -1,12 +1,12 @@
 #-----------------------------------------------------------
-# Vivado v2020.1 (64-bit)
-# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
-# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Mon Aug 24 09:58:10 2020
-# Process ID: 11136
-# Current directory: C:/Users/Campo/Documents/VGA-Controller/VGA-Controller.runs/synth_1
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon May 10 20:18:46 2021
+# Process ID: 6968
+# Current directory: C:/Users/James/Documents/GitHub/VGA-Controller/VGA-Controller.runs/synth_1
 # Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
-# Log file: C:/Users/Campo/Documents/VGA-Controller/VGA-Controller.runs/synth_1/top.vds
-# Journal file: C:/Users/Campo/Documents/VGA-Controller/VGA-Controller.runs/synth_1\vivado.jou
+# Log file: C:/Users/James/Documents/GitHub/VGA-Controller/VGA-Controller.runs/synth_1/top.vds
+# Journal file: C:/Users/James/Documents/GitHub/VGA-Controller/VGA-Controller.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source top.tcl -notrace

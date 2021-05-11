@@ -1,8 +1,8 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date         : Mon Aug 24 09:59:27 2020
-| Host         : Campo-PC running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Mon May 10 20:20:17 2021
+| Host         : DESKTOP-5TVNUIJ running 64-bit major release  (build 9200)
 | Command      : report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
 | Design       : top
 | Device       : xc7a35tcpg236-1
@@ -23,23 +23,40 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 2
-+----------+------------------+------------------------------------------------+------------+
-| Rule     | Severity         | Description                                    | Violations |
-+----------+------------------+------------------------------------------------+------------+
-| TIMING-6 | Critical Warning | No common primary clock between related clocks | 2          |
-+----------+------------------+------------------------------------------------+------------+
+             Violations found: 5
++-----------+------------------+------------------------------------------------------------------+------------+
+| Rule      | Severity         | Description                                                      | Violations |
++-----------+------------------+------------------------------------------------------------------+------------+
+| TIMING-6  | Critical Warning | No common primary clock between related clocks                   | 2          |
+| TIMING-17 | Critical Warning | Non-clocked sequential cell                                      | 1          |
+| TIMING-56 | Warning          | Missing logically or physically excluded clock groups constraint | 2          |
++-----------+------------------+------------------------------------------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
 TIMING-6#1 Critical Warning
 No common primary clock between related clocks  
-The clocks clk_out_clk_wiz_0 and clk_out_clk_wiz_0_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out_clk_wiz_0] -to [get_clocks clk_out_clk_wiz_0_1]
+The clocks pixel_clk_o_vga_pixel_clk and pixel_clk_o_vga_pixel_clk_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks pixel_clk_o_vga_pixel_clk] -to [get_clocks pixel_clk_o_vga_pixel_clk_1]
 Related violations: <none>
 
 TIMING-6#2 Critical Warning
 No common primary clock between related clocks  
-The clocks clk_out_clk_wiz_0_1 and clk_out_clk_wiz_0 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out_clk_wiz_0_1] -to [get_clocks clk_out_clk_wiz_0]
+The clocks pixel_clk_o_vga_pixel_clk_1 and pixel_clk_o_vga_pixel_clk are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks pixel_clk_o_vga_pixel_clk_1] -to [get_clocks pixel_clk_o_vga_pixel_clk]
+Related violations: <none>
+
+TIMING-17#1 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_Sync/FRAME_COUNTER_inst/genblk1_0.DSP48E_BL/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-56#1 Warning
+Missing logically or physically excluded clock groups constraint  
+Multiple clocks are user generated or auto-derived on the source pin vga_Clk/inst/mmcm_adv_inst/CLKFBOUT but are not logically or physically exclusive with respect to one another. To have the static timing analysis match the behavior in hardware, there cannot be multiple clocks generated on the same pin and when such situation occurs, the clocks should be defined as physically or logically exclusive. The list of clocks generated on the source pin is: clkfbout_vga_pixel_clk, clkfbout_vga_pixel_clk_1
+Related violations: <none>
+
+TIMING-56#2 Warning
+Missing logically or physically excluded clock groups constraint  
+Multiple clocks are user generated or auto-derived on the source pin vga_Clk/inst/mmcm_adv_inst/CLKOUT0 but are not logically or physically exclusive with respect to one another. To have the static timing analysis match the behavior in hardware, there cannot be multiple clocks generated on the same pin and when such situation occurs, the clocks should be defined as physically or logically exclusive. The list of clocks generated on the source pin is: pixel_clk_o_vga_pixel_clk, pixel_clk_o_vga_pixel_clk_1
 Related violations: <none>
 
 
